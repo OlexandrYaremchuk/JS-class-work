@@ -88,18 +88,18 @@ const normalizedString2 = string2.toLowerCase();
 // Апостроф
 const backticks = "Це it's з інформацією про клієнта";
 // const backticks = "Це it's з інформацією про клієнта";
-console.log(backticks);
+// console.log(backticks);
 
 // Перенос на наступний рядок
 const list = 'Mark:\n * John\n * Pele\n * Mary\n';
-console.log(list);
+// console.log(list);
 
 // Склад рядка  в JS змінити неможливою Неможливо взяти символ посередині рядка та замінити його.
 // Як тільки рядок створенно, він такий назавжди.Проте можна створити новий рядок та записати його в туж саму зміну
 // замість старого рядку
 let str = 'Hi';
 str = 'P' + str[1]; //1 - символ, який залишаємо (додаємо в новий рядок)
-console.log(str);
+// console.log(str);
 
 // *? Задача;
 // *? Маємо наступні зміні. При необхідності можете створювати додаткові
@@ -111,3 +111,11 @@ console.log(str);
 // *? Мене звати Віктор.
 // *? Я навчаюсь в академії ItStep, групі "Pront-end22". Зверніть увагу
 // *? В назві групи помилка, її потрібно виправити шляхлм створення новго рядка
+const studentName = 'Viktor';
+const school = 'ItStep';
+let groupNumber = 'Pront-end22';
+// groupNumber = 'F' + groupNumber.slice(1);
+groupNumber = groupNumber.replace('P', 'F');
+
+const result = `Мене звати ${studentName}. Я навчаюсь в академії ${school}, в групі ${groupNumber} `;
+console.log(result);
