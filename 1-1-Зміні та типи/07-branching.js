@@ -4,7 +4,7 @@
 
 // if (5 > 30) {
 //   //  тіло
-//   console.log('qweqwe');
+//   console.log('sdfsd');
 // }
 
 // console.log('далі');
@@ -22,7 +22,7 @@
  * Оператор розгалуження else...if
  */
 
-const salary = 5000;
+// const salary = 2000;
 
 // if (salary <= 500) {
 //   console.log('Рівень 1');
@@ -39,7 +39,7 @@ const salary = 5000;
 /*
  * Тернарний оператор
  */
-// const balance = 1000;
+const balance = 1000;
 // let message;
 
 // if (balance >= 0) {
@@ -57,7 +57,7 @@ const salary = 5000;
  */
 
 // if (true) {
-//   const a = 5;
+//    const a = 5;
 //   console.log(b);
 // }
 

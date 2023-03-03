@@ -111,11 +111,14 @@ str = 'P' + str[1]; //1 - символ, який залишаємо (додає�
 // *? Мене звати Віктор.
 // *? Я навчаюсь в академії ItStep, групі "Pront-end22". Зверніть увагу
 // *? В назві групи помилка, її потрібно виправити шляхлм створення новго рядка
+// Assign variables
 const studentName = 'Viktor';
 const school = 'ItStep';
 let groupNumber = 'Pront-end22';
-// groupNumber = 'F' + groupNumber.slice(1);
+
+// Replace the first letter of groupNumber with 'F'
 groupNumber = groupNumber.replace('P', 'F');
 
-const result = `Мене звати ${studentName}. Я навчаюсь в академії ${school}, в групі ${groupNumber} `;
+// Format and print the result
+const result = `Мене звати ${studentName}.Я навчаюсь в академії ${school}, в групі ${groupNumber}`;
 console.log(result);

@@ -4,19 +4,3 @@
 
 // Для реалізації цієї задачі скористайся конструкцією switch.
 
-let mood = prompt('What is your mood today?');
-
-switch (mood) {
-  case 'happy':
-    console.log('😊');
-    break;
-  case 'sad':
-    console.log('😢');
-    break;
-  case 'angry':
-    console.log('😠');
-    break;
-  default:
-    console.log('😐');
-    break;
-}
