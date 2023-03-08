@@ -14,9 +14,37 @@
  * «Оформляємо замовлення на суму [сума] з знижкою [знижка]%»
  */
 
-const totalSpent = 2000;
-let payment = 500;
+const totalSpent = 50;
+let payment = prompt("Яка сума покупки?");
+let total = totalSpent + Number(payment)
 let discount = 0;
+
+if (payment === null) {
+    alert("Операцію скасовано користувачем")
+}
+else if (total < 100) {
+    alert(`Оформляємо замовлення на суму ${payment}.У вас немає знижки`)
+} else if (total >= 100 && total < 1000) {
+    discount = 0.02
+    alert(`Оформляємо замовлення на суму ${payment}, ваша знижка 2%. Вартість покупки з врахуванням знижки ${payment - payment * discount}`)
+} else if (total >= 1000 && total < 5000) {
+    discount = 0.05
+    alert(`Оформляємо замовлення на суму ${payment}, ваша знижка 5%. Вартість покупки з врахуванням знижки ${payment - payment * discount}`)
+} else if (total >= 5000) {
+    discount = 0.1
+    alert(`Оформляємо замовлення на суму ${payment}, ваша знижка 10%. Вартість покупки з врахуванням знижки ${payment - payment * discount}`)
+}
+
+
+
+
+
+
+
+
+
+
+
 
 // 'Бронзовий партенр, знижка 2%'
 // 'Срібний партнер, знижка 5%'

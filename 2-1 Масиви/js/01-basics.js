@@ -8,38 +8,29 @@
  *
  * 'Mango', 'Kiwi', 'Poly', 'Ajax'
  */
-
-// const friends = ['Mango', 'Kiwi', 'Poly', 'Ajax'];
+// const friends = ['Mango', 'Kiwi', 'Poly', 'Ajax']
+// console.table(friends);
+// friends[1] = 'dfjhadf'
 // console.table(friends);
 
-// friends[1] = 'qwerqrwr';
-// friends[3] = 123123;
-
-// console.table(friends);
-
-// const lastIndex = friends.length - 1;
+// const lastIndex = friends.length
 // console.log(lastIndex);
-
 /*
  * Передача по посиланню та по значенню
  * - Примітиви та складні типи
  * - Посилкова рівність (referential equality)
  */
-
 // const a = [1, 2, 3];
-// const b = a;
+// const b = a
+// a[0] = 5
+// console.log(a);
+// console.log(b);
 
-// console.log('a', a);
-// console.log('b', b);
-
-// a[0] = 500;
-
-// console.log('a', a);
-// console.log('b', b);
-
-// console.log(a === b);
-
-// console.log([1, 2, 3] === [1, 2, 3]);
+// let x = 10;
+// let y = x
+// x = 12
+// console.log('x', x);
+// console.log('y', y);
 
 /*
  * Перебір (ітерація) масива
@@ -48,15 +39,12 @@
  */
 
 const friends = ['Mango', 'Kiwi', 'Poly', 'Ajax'];
-// console.table(friends);
-// const lastIndex = friends.length - 1;
+console.table(friends)
 
 for (let i = 0; i < friends.length; i += 1) {
-  friends[i] += `-${i}`;
+  console.log(i);
+  console.log(friends[i]);
+
+  friends[i] += `-${i}`
 }
-
-// for (let friend of friends) {
-//   console.log(friend);
-// }
-
 console.table(friends);

@@ -10,39 +10,24 @@
  */
 
 const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4xth3m4n'];
-const loginToFind = 'aj4xth3m4n';
-// let message = `Користувач ${loginToFind} не існує.`;
+const loginToFind = 'k1widab3st1';
+// let message = '`Користувач ${loginToFind} не існує.`'
 
 // for (let i = 0; i < logins.length; i += 1) {
-//   const login = logins[i];
-
-//   console.log('Login: ', login);
-//   console.log(`${login} === ${loginToFind}: `, login === loginToFind);
-
-//   if (login === loginToFind) {
-//     console.log('Ура, рівні!!!');
-//     message = `Користувача ${loginToFind} знайдено.`;
-//     break;
+//   // console.log(logins[i]);
+//   // const login = logins[i];
+//   if (logins[i] === loginToFind) {
+//     // console.log(`Користувач ${logins[i]} знайдено`);
+//     message = `Користувач ${logins[i]} знайдено`
 //   }
+
 // }
-
-// console.log(message);
-
 // for (const login of logins) {
-//   console.log('Login: ', login);
-//   console.log(`${login} === ${loginToFind}: `, login === loginToFind);
-
 //   if (login === loginToFind) {
-//     console.log('Ура, рівні!!!');
-//     message = `Користувача ${loginToFind} знайдено.`;
-//     break;
+//     message = `Користувач ${login} знайдено`
 //   }
 // }
 
-// console.log(message);
-
-const message = logins.includes(loginToFind)
-  ? `Користувача ${loginToFind} знайдено.`
-  : `Користувач ${loginToFind} не існує.`;
+const message = logins.includes(loginToFind) ? `Користувач ${loginToFind} знайдено` : `Користувач ${loginToFind} не існує.`
 
 console.log(message);

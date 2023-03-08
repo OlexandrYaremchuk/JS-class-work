@@ -19,26 +19,4 @@ let totalSpent = 2000;
 let payment = 500;
 let discount = 0;
 
-if (totalSpent >= 100 && totalSpent < 1000) {
-  console.log('Бронзовий партнер, знижка 2%');
-  discount = 0.02;
-} else if (totalSpent >= 1000 && totalSpent < 5000) {
-  console.log('Срібний партнер, знижка 5%');
-  discount = 0.05;
-} else if (totalSpent >= 5000) {
-  console.log('Золотий партнер, знижка 10%');
-  discount = 0.1;
-} else {
-  console.log('Не партнер, знижка 0%');
-}
 
-payment -= payment * discount;
-// payment = payment - payment * discount;
-
-console.log(
-  `Оформляємо замовлення на суму ${payment} з знижкою ${discount * 100}%`,
-);
-
-totalSpent += payment;
-
-console.log(`Загальна сума витрачених коштів в магазині: ${totalSpent}`);

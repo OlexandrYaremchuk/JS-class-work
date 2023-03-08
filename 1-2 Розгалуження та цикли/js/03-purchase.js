@@ -19,18 +19,4 @@
 let balance = 10000;
 const payment = 2000;
 
-console.log(
-  `Загальна вартість замовлення ${payment} кредитів. Перевіряєм к-ть доступних коштів на рахунку`,
-);
 
-if (payment <= balance) {
-  balance -= payment;
-  // balance = balance - payment
-
-  console.log('Все добре, знімаємо гроші ... Дякуємо за покупку!');
-  console.log(`На рахунку залишилось ${balance} кредитів`);
-} else {
-  console.log('На рахунку недостатньо коштів для проведення транзакції!');
-}
-
-console.log('Операцію завершено');

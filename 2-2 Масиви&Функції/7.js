@@ -10,25 +10,4 @@
 //*? Потім все повторюється до того моменту поки весь масив не буде відсортований
 const arr = ["HTML", "JavaScript", "Phyton", "CSS", "Basic"];
 
-// const sortArray = function (array) {
-//   const sortedArrey = array.slice(0);
-//   for (let i = array.length - 1; i > 0; i--) {
-//     for (let j = 0; j < i; j++) {
-//       if (sortedArrey[j] > sortedArrey[j + 1]) {
-//         const temp = sortedArrey[j];
-//         sortedArrey[j] = sortedArrey[j + 1];
-//         sortedArrey[j + 1] = temp;
-//       }
-//     }
-//   }
-//   return sortedArrey;
-// };
 
-const sortArray = function (array) {
-  const sortedArrey = array.sort();
-
-  return sortedArrey;
-};
-
-console.log(arr);
-console.log(sortArray(arr));

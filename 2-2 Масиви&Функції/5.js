@@ -4,11 +4,11 @@ const findeLargestNumber = function (numbers) {
   let largestNumber = numbers[0];
   for (const number of numbers) {
     if (number > largestNumber) {
-      largestNumber = number;
+      largestNumber = number
     }
   }
-  return largestNumber;
+  return largestNumber
 };
 
-console.log(findeLargestNumber([2, 17, 94, 1, 23, 37]));
-console.log(findeLargestNumber([49, 4, 83, 7, 12, 137]));
+console.log(findeLargestNumber([12, 5, 7, 25, 3, 5, 1]));
+console.log(findeLargestNumber([123, 15, 27, 25, 23, 154, 21]));
