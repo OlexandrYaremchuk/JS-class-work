@@ -8,3 +8,15 @@
 
 const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
 
+// for
+let string = '';
+for (const friend of friends) {
+  string += friend + ',';
+}
+
+console.log(string);
+
+// join()
+const string1 = friends.join(',');
+console.log(friends);
+console.log(string1);
