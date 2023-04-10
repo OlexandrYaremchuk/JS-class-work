@@ -18,14 +18,21 @@ const car = {
 };
 
 //* Створіть масив "автомобілів", який містить кілька об'єктів типу "автомобіль":
+// const cars = [
+//     { model: 'Audi', year: 2018, speed: 120 },
+//     { model: 'BMW', year: 2020, speed: 150 },
+//     { model: 'Mercedes', year: 2017, speed: 110 },
+// ];
+
 const cars = [
-    { model: 'Audi', year: 2018, speed: 120 },
-    { model: 'BMW', year: 2020, speed: 150 },
+    { model: 'Mer', year: 2018, speed: 50 },
+    { model: 'Toyota', year: 2015, speed: 100 },
     { model: 'Mercedes', year: 2017, speed: 110 },
 ];
 
 //* Використовуючи метод "forEach()", викличте метод "прискорюватися" на кожному елементі масиву "автомобілів":
-cars.forEach(value => {
+
+cars.concat(value => {
     car.accelerate.call(value, 20);
     car.brake.call(value, 20);
 });
