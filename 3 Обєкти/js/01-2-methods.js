@@ -9,17 +9,18 @@
  * - getTrackCount
  */
 
-const playlist = {
-  name: 'Мій супер плейлист',
+const playList = {
+  name: 'Мій супер плйлист',
   rating: 5,
-  tracks: ['трек-1', 'трек-2', 'трек-3'],
+  tracks: ['track-1', 'track-2, track-3', 'track-4', 'track-5'],
+  showInfo() {
+    console.log(this);
+  },
   changeName(newName) {
-    console.log('this всередині changeName: ', this);
-
     this.name = newName;
   },
-  addTrack(track) {
-    this.tracks.push(track);
+  addTrack(newTrack) {
+    this.tracks.push(newTrack);
   },
   updateRating(newRating) {
     this.rating = newRating;
@@ -29,16 +30,11 @@ const playlist = {
   },
 };
 
-console.log(playlist.getTrackCount());
-
-playlist.changeName('Нове імя');
-
-playlist.addTrack('новий трек 1');
-console.log(playlist.getTrackCount());
-
-playlist.addTrack('новий трек 2');
-console.log(playlist.getTrackCount());
-
-playlist.updateRating(4);
-
-console.log(playlist);
+playList.showInfo();
+playList.changeName('Мій новий плейлист');
+playList.addTrack('track-6');
+playList.addTrack('track-7');
+playList.addTrack('track-8');
+playList.updateRating(10);
+console.log(playList.getTrackCount());
+playList.showInfo();

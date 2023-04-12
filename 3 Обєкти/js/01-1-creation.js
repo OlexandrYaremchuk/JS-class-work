@@ -5,29 +5,28 @@
  * - Як відрізнити об'єкт від області видимості
  */
 
+// const obj = {
+//   key: 'value',
+// };
+
 // const playlist = {
-//   name: 'Мій топ плейлист',
+//   name: 'Мій плейлист',
 //   rating: 5,
-//   tracks: ['трек-1', 'трек-2', 'трек-3'],
-//   trackCount: 3,
+//   tracks: ['Трек-1', 'Трек-2', 'Трек-3'],
+//   album: {
+//     name: 'Мфй плейлист',
+//     year: 2019,
+//     artist: 'Мфй плейлист',
+//   },
 // };
 
-// console.log(playlist);
+// console.log(playlist.tracks);
 
-// const x = {};
-
-// const fn = function (myObject) {
-//   // myObject = { a: 1, b: 2 }
-//   console.log(myObject);
+// const fn = function (...args) {
+//   console.log(args);
 // };
 
-// fn({ a: 1, b: 2 });
-
-// const rtfm = function () {
-//   return { a: 5 };
-// };
-
-// console.log(rtfm());
+// fn(playlist);
 
 /*
  * Доступ до властивості
@@ -35,93 +34,81 @@
  * - obj['key']
  * - Відсутні властивості
  */
+// const playlist = {
+//   name: 'Мій плейлист',
+//   rating: 5,
+//   tracks: ['Трек-1', 'Трек-2', 'Трек-3'],
+//   album: {
+//     name: 'Мфй плейлист',
+//     year: 2019,
+//     artist: 'Мфй плейлист',
+//   },
+// };
 
-const playlist = {
-  name: 'Мій топ плейлист',
-  rating: 5,
-  tracks: ['трек-1', 'трек-2', 'трек-3'],
-  trackCount: 3,
-};
-
-// playlist.qwe = 5;
+// const propertyNames = 'tracks';
 
 // playlist.rating = 10;
+// playlist.url = 'https://play.google.com';
 
-// console.log(playlist);
-
-// console.log(playlist);
 // console.log(playlist.tracks);
-// console.log(playlist.name);
-// console.log(playlist.trackCount);
-
-const propertyName = 'tracks';
-
 // console.log(playlist.rating);
-// console.log(playlist['rating']);
-
-// console.log(playlist.propertyName);
-// console.log(playlist[propertyName]);
+// console.log(playlist['url']);
+// console.log(playlist.propertyNames);
+// playlist.propertyNames;
+// console.log(playlist);
 
 /*
  * Короткий запис властивостей
  */
-const username = 'Mango';
-const email = 'mango@mail.com';
+// const userName = 'Rita';
+// const email = 'rita@gmail.com';
 
-const signupData = {
-  username,
-  email,
-};
-
+// const signupData = {
+//   userName,
+//   email,
+// };
 // console.log(signupData);
-
 /*
  * Обчислювані властивості
  */
 
-//  <input name="color" value="tomato" >
+// const inputName = 'color';
+// const inputValue = 'red';
 
-const inputName = 'color';
-const inputValue = 'tomato';
+// const colorData = {
+//   [inputName]: inputValue,
+// };
+// console.log(colorData);
+// /*
+//  * Посилальний тип {} === {}
+//  */
+// const a = 2;
+// const b = a;
+// console.log(a === b);
 
-const colorPickerData = {
-  [inputName]: inputValue,
-};
+// const obj1 = { a: 5, b: 4 };
 
-// console.log(colorPickerData);
+// const obj2 = obj1;
 
-/*
- * Посилальний тип {} === {}
- */
+// console.log(obj1 === obj2);
 
 // console.log({ a: 1 } === { a: 1 });
-// console.log([] === []);
-
-// const a = { x: 1, y: 2 };
-// const b = a;
-
-// console.log(b === a);
-
-// a.hello = 100;
-// b.hello = 150;
-
-// console.log(a);
-// console.log(b);
-
+// console.log(obj1);
+// console.log(obj2);
 /*
  * Масиви та функції це об'єкти
  */
 
-// const a = [1, 2, 3];
+const a = [1, 2, 3];
 
-// a.hello = ':)';
+a.hello = ':)';
 
-// console.log(a);
+console.log(a);
 
-// const fn = function () {
-//   console.log('hello');
-// };
+const fn = function () {
+  console.log('hello');
+};
 
-// fn.hello = ';)';
+fn.hello = ';)';
 
-// console.dir(fn.hello);
+console.dir(fn.hello);
