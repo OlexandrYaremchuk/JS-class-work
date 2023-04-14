@@ -62,7 +62,7 @@ class User {
     }
 }
 
-const user = new User('John', 'Doe', 25, 'john.doe@example.com');
+const user = new User('Bobi', 'Babul', 25, 'bobiBabul@gmail.com');
 user.printInfo();
 user.changeEmail('test@example.com');
 user.printInfo();
