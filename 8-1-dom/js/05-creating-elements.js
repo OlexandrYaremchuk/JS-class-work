@@ -11,7 +11,7 @@ titleEl.classList.add('page-title');
 titleEl.textContent = 'Це заголовок сторінки :)';
 // console.log(titleEl);
 
-// document.body.appendChild(titleEl);
+// document.body.appendChild(titleEl);// додає елемент в кінець
 
 /*
  * Створюємо зображенння
@@ -25,7 +25,7 @@ imageEl.alt = 'valais-alpine-mountains-glacier';
 imageEl.width = 320;
 // console.log('imageEl', imageEl);
 
-// document.body.appendChild(imageEl);
+// document.body.appendChild(imageEl);// додає елемент в кінець
 
 const heroEl = document.querySelector('.hero');
 // heroEl.appendChild(titleEl);
@@ -50,3 +50,8 @@ const navEl = document.querySelector('.site-nav');
 
 // navEl.appendChild(navItemEl);
 navEl.insertBefore(navItemEl, navEl.firstElementChild);
+navEl.insertBefore(navItemEl, navEl.lastElementChild);
+navEl.insertBefore(navItemEl, navEl.children[2]); // перед третім елементом
+navEl.insertBefore(navItemEl, navEl.children[1]); // перед другим елементом
+
+//Для чого нам створювати динамічно елементи верстки через джс. Як правило через джс створюються елементи які нам приходять з бек-енда, а не статично відображені в html

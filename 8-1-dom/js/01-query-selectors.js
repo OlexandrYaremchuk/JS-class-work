@@ -31,3 +31,8 @@ magicBtn.addEventListener('click', () => {
   const navLinksEl = document.querySelectorAll('.site-nav__link'); //поверне всі елементи на сторінці
   console.log('navLinksEl', navLinksEl);
 });
+
+console.error('Error');
+console.log('User log');
+console.warn('Warn');
+console.info('Info');
