@@ -1,4 +1,4 @@
-export const header = document.createElement('header');
+const header = document.createElement('header');
 header.innerHTML = `
   <nav class="site-nav">
     <ul>
@@ -9,4 +9,5 @@ header.innerHTML = `
     </ul>
   </nav>
 `;
-// document.append(header);
+
+export default header;
