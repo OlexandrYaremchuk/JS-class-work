@@ -29,7 +29,7 @@ body.show-modal .modal {
 .modal {
   padding: 24px;
   border-radius: 4px;
-  max-width: 640px;
+  max-width: 340px;
   width: 100%;
   min-height: 320px;
   background-color: #fff;
@@ -39,7 +39,6 @@ body.show-modal .modal {
   transform: scale(1.1);
   transition: transform 200ms ease-in-out;
 }
-<<<<<<< HEAD
 
 /* newModal */
 .formBox {
@@ -53,14 +52,13 @@ body.show-modal .modal {
   display: flex;
   justify-content: space-between;
 }
-.formBox label:nth-child(4) {
-  justify-content: flex-start;
-}
+
 .formBox input {
   border-radius: 5px;
-  border: none;
-  background-color: aliceblue;
+  border: 1px solid rgb(107, 107, 107);
+  padding: 2px 10px;
 }
+
 .btnBox {
   display: flex;
   align-items: center;
@@ -89,5 +87,3 @@ body.show-modal .modal {
 .checkbox input {
   margin-right: 10px;
 }
-=======
->>>>>>> 2aaccafa104a5c1ee2a1333319c7ebff924329f6

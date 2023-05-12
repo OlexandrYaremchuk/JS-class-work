@@ -28,7 +28,11 @@ function onCloseModal() {
 
 function onBackdropClick(event) {
   if (event.currentTarget === event.target) {
+<<<<<<< HEAD
+    console.log('Клікнули по бекдропу!!!!');
+=======
     console.log('Кликнули именно в бекдроп!!!!');
+>>>>>>> 2aaccafa104a5c1ee2a1333319c7ebff924329f6
     onCloseModal();
   }
 }
