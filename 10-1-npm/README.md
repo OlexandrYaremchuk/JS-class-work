@@ -1,0 +1,37 @@
+# js-22
+
+- Термінал
+  - [Шпаргалка](https://habr.com/ru/company/ruvds/blog/445270/)
+  - Відкрити
+    - `control + ~`
+    - `view > teminal`
+    - через палітру `command + shift + p`
+  - Основні корисні команди
+    - шлях (pwd)
+    - лист (ls)
+    - навігація (cd)
+    - очистка `clear` або `control + l`
+    - створення файлів (touch)
+    - створення папок (mkdir)
+    - перейменування/переміщення (mv)
+    - видалення (rm)
+- Node.js та npm
+  - інсталяція
+  - ініціалізація та package.json
+  - [npmjs.com](https://www.npmjs.com/)
+  - работа з пакетами
+    - інсталяція
+    - видалення
+  - CommonJS модулі
+  - npm-скрипти
+    - pre и post
+- Транспиляція кода // процес перетворення сучасного коду в старий для того, щоб
+  на ньому могли працювати старі браузери
+  - [Babel](https://babeljs.io/)
+  - CLI и npm-скрипти
+  - Пресети
+- [Зббиральник Parcel](https://parceljs.org/)
+- [ECMAScript модулі](https://exploringjs.com/es6/ch_modules.html)
+  - Дефолтний (default) експорт та імпорт
+  - Іменований (named) експорт та імпорт
+  - Імпорт простору імен (namespace)
