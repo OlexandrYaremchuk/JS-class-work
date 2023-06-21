@@ -1,0 +1,31 @@
+{
+  "name": "js-22",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "prestart": "echo \"це престарт\"",
+    "poststart": "echo \"це після старт\"",
+    "all": "npm run prestart && npm run poststart",
+    "qwe": "echo \"привіт це мій новий скрипт\"",
+    "start": "node js/app.js",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "Olexandr Yaremchuk <ol.yarem4uk@gmail.com>",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "express": "^4.18.2",
+    "joi": "^17.2.1",
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.22.1"
+  }
+}
